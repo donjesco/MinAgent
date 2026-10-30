@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "pre-commit": [
+      "npm run check",
+      "npm run format"
+    ],
+    "post-commit": "git status"
+  }
+}

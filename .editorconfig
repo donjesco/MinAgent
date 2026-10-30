@@ -1,0 +1,49 @@
+# EditorConfig helps maintain consistent coding styles
+# https://editorconfig.org/
+
+root = true
+
+# Global defaults
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# JavaScript/TypeScript files
+[*.js]
+[*.mjs]
+[*.cjs]
+[package.json]
+[.eslintrc.cjs]
+[.prettierrc]
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# JSON files
+[*.json]
+[package.json]
+[.coveragerc]
+[coverage.config.json]
+indent_style = tab
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+[*.bash]
+[*.ps1]
+[*.cmd]
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Configuration files
+[.env*]
+[.minagent/*]
+[.playwright-mcp/*]
+trim_trailing_whitespace = true
+insert_final_newline = true

@@ -1,0 +1,37 @@
+{
+  "name": "minagent",
+  "version": "1.0.0",
+  "description": "MinAgent - Agente de programación CLI/TUI para terminal",
+  "type": "module",
+  "main": "src/minagent.mjs",
+  "scripts": {
+    "start": "node src/minagent.mjs",
+    "install": "node scripts/install.mjs",
+    "test": "node --test",
+    "test:unit": "node --test tests/unit/",
+    "test:integration": "node --test tests/integration/",
+    "test:e2e": "node --test tests/e2e/",
+    "test:cli": "node --test tests/cli/",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "check": "node scripts/lint.mjs --syntax-only",
+    "lint": "node scripts/lint.mjs",
+    "format": "node scripts/format.mjs",
+    "evaluate": "node scripts/evaluate.mjs --live",
+    "doctor": "node src/doctor.mjs",
+    "check-all": "npm run check && npm run format && npm run test",
+    "pretest": "npm run check",
+    "posttest": "npm run format"
+  },
+  "keywords": [
+    "agent",
+    "cli",
+    "terminal",
+    "ai",
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
